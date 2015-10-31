@@ -2,5 +2,6 @@
 {
     "name": "gitcompatibledubpackage",
     "description": "Example of a DUB package also usable as git submodule. For DUB test suite.",
-    "importPaths": [".."]
+    "importPaths": [".."],
+    "license": "public domain"
 }
