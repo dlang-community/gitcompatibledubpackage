@@ -4,5 +4,7 @@
     "description": "Example of a DUB package also usable as git submodule. For DUB test suite.",
     "importPaths": [".."],
     "sourcePaths": ["."],
-    "license": "public domain"
+    "license": "public domain",
+    "mainSourceFile": "hello.d",
+    "targetType": "executable"
 }
