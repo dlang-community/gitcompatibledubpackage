@@ -1,0 +1,7 @@
+name "gitcompatibledubpackage"
+description "Example of a DUB package also usable as git submodule. For DUB test suite."
+license "public domain"
+targetType "executable"
+mainSourceFile "hello.d"
+sourcePaths "."
+importPaths ".."
