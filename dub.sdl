@@ -1,0 +1,31 @@
+# Example dub.sdl file for git-compatible DUB packages.
+# For more information on dub.sdl files, see:
+# https://code.dlang.org/package-format?lang=sdl
+
+# Project name.
+# This and the repository name (name of this file's parent directory) must be the same!
+name "gitcompatibledubpackage"
+
+# Set sourcePaths to "." to cause DUB to scan the entire project
+# directory for source files.
+#
+# If this is undesirable (you have backup or other .d files), you can
+# enumerate source files explicitly:
+#   sourcePaths "a.d" "b.d" ...
+# Alternatively, you can exclude some files with excludedSourceFiles:
+#   sourcePaths "."
+#   excludedSourceFiles "excluded.d"
+sourcePaths "."
+
+# Set importPaths to ".." to allow packagename.modulename lookups to work.
+
+# Note that setting importPaths to ".." will cause DUB to recursively
+# scan all directories and their sub-directories in the parent
+# directory!
+importPaths ".."
+
+# Other standard DUB fields.
+description "Example of a DUB package also usable as git submodule. For DUB test suite."
+license "public domain"
+targetType "executable"
+mainSourceFile "hello.d"
