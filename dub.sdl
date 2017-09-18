@@ -27,5 +27,11 @@ importPaths ".."
 # Other standard DUB fields.
 description "Example of a DUB package also usable as git submodule. For DUB test suite."
 license "public domain"
-targetType "executable"
-mainSourceFile "hello.d"
+configuration "exe" {
+    targetType "executable"
+    mainSourceFile "hello.d"
+}
+configuration "lib" {
+    targetType "library"
+    excludedSourceFiles "hello.d"
+}
