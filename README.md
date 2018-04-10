@@ -6,4 +6,4 @@ It also shows how to make a DUB package which can also be used as a git submodul
 "importPaths": [".."]
 ```
 
-**For this to work, it is important that the DUB "name" field and the repositery name are the same.**
+**For this to work, it is important that the DUB "name" field and the repository name are the same.**
